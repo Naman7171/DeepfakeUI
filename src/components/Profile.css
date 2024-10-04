@@ -1,0 +1,107 @@
+.profile-container {
+  padding-top: 64px; /* Adjust to the height of the header */
+  padding-bottom: 48px; /* Adjust to the height of the footer */
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push content to take full height */
+  align-items: center;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  width: 90%;
+  max-width: 1200px;
+  margin-top: auto; /* Allow the table to stick to the bottom */
+}
+
+.table-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.upload-input {
+  margin: 10px 0;
+}
+
+.table-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* New deepfake options section */
+.deepfake-options {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px 0; /* Added top margin */
+  display: flex;
+  justify-content: space-between;
+}
+
+.deepfake-option {
+  background-color: #f5f5f5;
+  padding: 30px; /* Increased padding */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+  flex: 1; /* Allow the option boxes to grow */
+  margin: 0 10px; /* Spacing between option boxes */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.deepfake-option:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.deepfake-option h6 {
+  margin-bottom: 20px; /* More space below the heading */
+  font-weight: 600; /* Bolder font weight */
+  color: #333; /* Darker text color */
+}
+
+.upload-input {
+  margin: 15px 0; /* Increased margin */
+  padding: 10px; /* Padding for better touch targets */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners for input */
+}
+
+.upload-button {
+  margin-top: 50px; /* Added margin to create a gap */
+}
+
+.upload-input:focus {
+  border-color: #1976d2; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+@media screen and (max-width: 768px) {
+  .profile-content {
+    width: 95%;
+  }
+
+  .upload-section {
+    width: 100%;
+  }
+
+  .deepfake-options {
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center; /* Center align items */
+  }
+
+  .deepfake-option {
+    margin: 10px 0; /* Space between stacked options */
+    width: 100%; /* Full width for stacked options */
+  }
+}

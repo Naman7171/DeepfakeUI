@@ -1,0 +1,12 @@
+.details-container {
+  padding: 20px;
+}
+
+.details-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.analysis-text {
+  margin-top: 16px;
+}
